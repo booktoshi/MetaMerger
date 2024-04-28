@@ -7,13 +7,14 @@
 
 This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** https://github.com/hashlips-lab/art-engine-template to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used.
 
+### Pre-Requisites: Download this folder and save it in a easy-to-find place on your computer.
 ### Pre-Requisites: Python3 https://realpython.com/installing-python/
 ### Pre-Requisites: Hashlips https://github.com/hashlips-lab/art-engine-template 
 ### Instructions
 
 1. **Setup Environment**
    - Create a new folder in an easy-to-find location.
-   - Inside this new folder, create two subfolders: `traits` and `inscriptions`.
+   - Inside this new folder, create two subfolders: `traits` and `inscriptions` (included if downloading this repo).
    
 2. **Prepare Data**
    - Visit the Telegram bot [NodeRunner Tool Bot](https://t.me/noderunner_tool_bot).
