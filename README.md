@@ -13,7 +13,7 @@ This script works with the metadata trait JSON sheets provided when using the **
 
 1. **Setup Environment**
    - Create a new folder in an easy-to-find location.
-   - Inside this new folder, create two subfolders: `traits` and `inscription`.
+   - Inside this new folder, create two subfolders: `traits` and `inscriptions`.
    
 2. **Prepare Data**
    - Visit the Telegram bot [NodeRunner Tool Bot](https://t.me/noderunner_tool_bot).
