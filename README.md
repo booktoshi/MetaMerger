@@ -64,4 +64,6 @@ Contributions are what make the open source community such an amazing place to l
 <div align="center" style="background-color:#c9f001; color:#013db7; padding:10px; border-radius:8px;">
 <strong>Contact Information:</strong> For further assistance or queries, please contact our support team https://discord.gg/6z2bek9Yf7.
 </div>
+<strong>Dev:</strong> https://github.com/akl773.
+</div>
 
