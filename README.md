@@ -7,9 +7,9 @@
 
 This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** https://github.com/hashlips-lab/art-engine-template to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used.
 
-### Pre-Requisites: Download this folder and save it in a easy-to-find place on your computer.
-### Pre-Requisites: Python3 https://realpython.com/installing-python/
-### Pre-Requisites: Hashlips https://github.com/hashlips-lab/art-engine-template 
+### Pre-Requisite 1: Download this folder and save it in a easy-to-find place on your computer.
+### Pre-Requisite 2: Python3 https://realpython.com/installing-python/
+### Pre-Requisite 3: Hashlips https://github.com/hashlips-lab/art-engine-template 
 ### Instructions
 
 1. **Setup Environment**
