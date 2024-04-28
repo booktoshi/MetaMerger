@@ -5,7 +5,7 @@
 
 </div>
 
-This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** https://github.com/hashlips-lab/art-engine-template to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used.
+This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** https://github.com/hashlips-lab/art-engine-template to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used. This is also assuming that you are using one of the auto-inscribers created by https://github.com/martinseeger2002 | https://github.com/martinseeger2002/dogcoin_ordinal_auto_inscriber
 
 ### Pre-Requisite 1: Download this folder and save it in a easy-to-find place on your computer.
 ### Pre-Requisite 2: Python3 https://realpython.com/installing-python/
