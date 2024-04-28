@@ -1,0 +1,1 @@
+Save the json file The NodeRunner Tool Bot provides you into this folder and delete this file.
