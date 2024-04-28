@@ -5,7 +5,7 @@
 
 </div>
 
-This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used.
+This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** https://github.com/hashlips-lab/art-engine-template to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used.
 
 ### Pre-Requisites: Python3
 ### Instructions
