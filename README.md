@@ -35,7 +35,7 @@ This script works with the metadata trait JSON sheets provided when using the **
    - Follow the on-screen instructions to input the mint wallet address and adjust ID numbers as necessary. This will need to be done if you are using the auto-insciber and the auto-inscriber runs into a corrupt file. The auto-inscriber will skip the corrupt file and go to the next file. As a result, you need to find that missed inscription and inscribe that at the end of the mint.
    - The script will ask you if you want to replace any inscription ID numbers, if you need to replace any inscription ID numbers due to the auto-inscriber skipping files, you will commmand the script the larger number first and then the smaller number second. 
 
-##Example:##
+### Example: (do not copy)   
 ```
 Please enter the index to switch to: (FROM --> TO), press q to end: 366 157
 Switching 366 with 157, all the index starting from 157 till 366 will be shifted by 1
