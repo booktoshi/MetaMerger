@@ -40,11 +40,11 @@ This script works with the metadata trait JSON sheets provided when using the **
 
 ### <span style="color:#000000;">Contributing</span>
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated, {nodeRunners}**.
 
 ---
 
 <div align="center" style="background-color:#c9f001; color:#013db7; padding:10px; border-radius:8px;">
-<strong>Contact Information:</strong> For further assistance or queries, please contact our support team.
+<strong>Contact Information:</strong> For further assistance or queries, please contact our support team https://discord.gg/6z2bek9Yf7.
 </div>
 
