@@ -1,7 +1,6 @@
 <div align="center">
 
-# <span style="color:#013db7;">NR-MetaMerger</span>
-## <span style="color:#c9f001;">TheNodeRunners MetaMerger</span>
+# <span style="color:#013db7;">TheNodeRunners MetaMerger</span>
 
 </div>
 
