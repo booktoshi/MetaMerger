@@ -95,7 +95,7 @@ class DataMerger:
         :param address: Wallet address
         :param from_idx: IDx of the inscription to move
         :param to_idx: IDx to move the inscription to
-        :return: None, update the inscriptions file
+        :return: None, update the inscription file
         """
         from_idx -= 1
         to_idx -= 1
@@ -159,6 +159,65 @@ class DataMerger:
         with open(os.path.join(self.merged_folder, address), "w") as f:
             json.dump(complete_data, f)
 
+    def view_traits(self):
+        while True:
+            trait_number = input("\nEnter the trait number, (you can type q to exit): ")
+            if trait_number in ["q", "Q"]:
+                break
+            trait_file = os.path.join(self.traits_folder, f"{trait_number}.json")
+            with open(trait_file, "r") as f:
+                print(json.dumps(json.load(f), indent=4))
+
+    def view_inscriptions(self):
+        while True:
+            inscription_id = input("\nEnter the inscription ID: (you can type q to exit): ")
+            if inscription_id in ["q", "Q"]:
+                break
+            inscriptions = self.load_inscriptions(self.get_address())
+            inscription = [data for data in inscriptions if data["id"] == inscription_id]
+            if not inscription:
+                print("Inscription not found")
+                continue
+            print(json.dumps(inscription[0], indent=2))
+
+    def view_data(self):
+        while True:
+            try:
+                user_input = int(input("1. Traits\n2. Inscriptions\n3. Exit\nEnter the option:"))
+                if user_input == 1:
+                    self.view_traits()
+                elif user_input == 2:
+                    self.view_inscriptions()
+                elif user_input == 3:
+                    break
+                else:
+                    print("Invalid option, please try again.")
+            except Exception as e:
+                print(f"Invalid user entry")
+                continue
+
+    def menu(self):
+        try:
+            print("1. Run the data merging process")
+            print("2. Fix the order of inscriptions.")
+            print("3. View the data.")
+            print("4. Exit")
+            user_selection = int(input("Enter the option: "))
+            if user_selection == 1:
+                self.run()
+            elif user_selection == 2:
+                self.fix_inscriptions(self.get_address())
+            elif user_selection == 3:
+                self.view_data()
+            elif user_selection == 4:
+                print("Exiting the program.")
+                exit()
+            else:
+                print("Invalid option, please try again.")
+        except Exception as e:
+            print(f"Invalid entry, please re-try\n")
+            self.menu()
+
     def run(self) -> None:
         """
         Main function to run the data merging operation
@@ -166,21 +225,13 @@ class DataMerger:
         print("Starting the data merging process...")
         self.create_directory()
         address = self.get_address()
-        user_input = input("Do you want to fix the order of inscriptions? Y/n ")
-        if user_input not in ["n", "N"]:
-            self.fix_inscriptions(address)
-        inscription_ids = self.load_inscriptions(address)
-        merged_traits = self.load_traits()
-        complete_data = self.merge_data(inscription_ids, merged_traits)
+        complete_data = self.merge_data(
+            inscription_ids=self.load_inscriptions(address),
+            merged_traits=self.load_traits()
+        )
         self.save_data(complete_data, address)
-
-    def dry_run(self):
-        with open(os.path.join(self.merged_folder, self.get_address()), "r") as f:
-            complete_file = json.load(f)
-            ids = [data["meta"]["name"].split("#")[1] for data in complete_file]
-            print(ids)
 
 
 if __name__ == '__main__':
     merger = DataMerger()
-    merger.run()
+    merger.menu()
