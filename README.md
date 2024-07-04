@@ -1,10 +1,10 @@
 <div align="center">
 
-# <span style="color:#013db7;">TheNodeRunners MetaMerger</span>
+# <span style="color:#013db7;">MetaMerger</span>
 
 </div>
 
-**The NodeRunner MetaMerger** is developed to work with a fresh inscription wallet where the inscriber is sending the inscriptions to a brand new wallet and the inscriptions are **being minted in sequential ID # order as provided by Hashlip Art Generator for images and metadata sheets.** 
+**MetaMerger** is developed to work with a fresh inscription wallet where the inscriber is sending the inscriptions to a brand new wallet and the inscriptions are **being minted in sequential ID # order as provided by Hashlip Art Generator for images and metadata sheets.** 
 
 This script works with the metadata trait JSON sheets provided when using the **Hashlips Art Generator Template** https://github.com/hashlips-lab/art-engine-template to generate your metadata and/or artwork. You must have the trait sheets that Hashlips generates when used. This is also assuming that you are using one of the auto-inscribers created by https://github.com/martinseeger2002 | https://github.com/martinseeger2002/dogcoin_ordinal_auto_inscriber
 
